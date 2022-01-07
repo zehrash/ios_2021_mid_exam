@@ -23,17 +23,22 @@ class BookGalleryViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.contentView.backgroundColor = .purple
+        translatesAutoresizingMaskIntoConstraints = false
+        
+        self.contentView.backgroundColor = .white
         contentView.layer.cornerRadius = 6.0
         contentView.layer.masksToBounds = true
+        
         self.profileImageView = UIImageView()
+        self.profileImageView.clipsToBounds = true
         self.profileImageView.frame = CGRect(x: 0, y: 0, width: contentView.frame.width, height: contentView.frame.height - 20)
+        
         self.title = UILabel()
         self.title.frame = CGRect(x: 0, y: self.profileImageView.frame.maxY, width: contentView.frame.width, height: 20)
-        translatesAutoresizingMaskIntoConstraints = false
-        profileImageView.clipsToBounds = true
+        
         self.contentView.addSubview(profileImageView)
         self.contentView.addSubview(title)
+        
         setupConstraints()
     }
     
