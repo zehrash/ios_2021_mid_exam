@@ -13,6 +13,7 @@
 		E345C7CA27888F27004F9258 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E345C7C827888F27004F9258 /* Main.storyboard */; };
 		E345C7CC27888F2B004F9258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E345C7CB27888F2B004F9258 /* Assets.xcassets */; };
 		E345C7CF27888F2B004F9258 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E345C7CD27888F2B004F9258 /* LaunchScreen.storyboard */; };
+		E345C7D82788A3B8004F9258 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E345C7D72788A3B8004F9258 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E345C7CB27888F2B004F9258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E345C7CE27888F2B004F9258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E345C7D027888F2B004F9258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E345C7D72788A3B8004F9258 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		E345C7C127888F26004F9258 /* ios_2021_mid_exam */ = {
 			isa = PBXGroup;
 			children = (
+				E345C7D62788A3A1004F9258 /* BookModel */,
 				E345C7C227888F26004F9258 /* AppDelegate.swift */,
 				E345C7C427888F26004F9258 /* SceneDelegate.swift */,
 				E345C7C627888F27004F9258 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				E345C7D027888F2B004F9258 /* Info.plist */,
 			);
 			path = ios_2021_mid_exam;
+			sourceTree = "<group>";
+		};
+		E345C7D62788A3A1004F9258 /* BookModel */ = {
+			isa = PBXGroup;
+			children = (
+				E345C7D72788A3B8004F9258 /* Model.swift */,
+			);
+			path = BookModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 				E345C7C727888F27004F9258 /* ViewController.swift in Sources */,
 				E345C7C327888F26004F9258 /* AppDelegate.swift in Sources */,
 				E345C7C527888F26004F9258 /* SceneDelegate.swift in Sources */,
+				E345C7D82788A3B8004F9258 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
