@@ -73,10 +73,10 @@ extension ViewController: UICollectionViewDataSource {
 }
 
 extension ViewController: UICollectionViewDelegate {
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let focusedBook = BookDetailViewController(book: books[indexPath.item])
-//        present(focusedBook, animated: true, completion: nil)
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let focusedBook = BookDetailViewController(book: books[indexPath.item])
+        present(focusedBook, animated: true, completion: nil)
+    }
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
