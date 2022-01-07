@@ -8,7 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    // brace yourself, exam is coming
+
+// TODO -> title shoud be 2 lines; no time now
     
     var books: [Book]!
     
@@ -81,7 +82,7 @@ extension ViewController: UICollectionViewDelegate {
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 150, height: 150.0)
+        return CGSize(width: 150, height: 200.0)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 50, left: 25, bottom: 20, right: 25)

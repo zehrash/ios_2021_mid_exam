@@ -27,6 +27,7 @@ class BookDetailViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        //TODO: fix ui of buttons
         
         view.addSubview(bookForm)
         view.addSubview(downloadButton)
@@ -39,12 +40,12 @@ class BookDetailViewController: UIViewController {
             bookForm.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             bookForm.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             bookForm.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -80),
-            
+            //TODO: add constraints for all views
         ])
     }
     
     @objc private func favouritesButtonTapped() {
-        //TODO
+        //TODO: save book logic
     }
     
 }

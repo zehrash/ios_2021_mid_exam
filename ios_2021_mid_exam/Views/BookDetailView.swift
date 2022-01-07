@@ -26,6 +26,7 @@ class BookDetailView: UIView {
     }
     
     private func createBookForm(book: Book) {
+        backgroundColor = .white
         
         title = UILabel()
         title.translatesAutoresizingMaskIntoConstraints = false
@@ -55,11 +56,16 @@ class BookDetailView: UIView {
         addSubview(rating)
     
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: topAnchor),
+            title.topAnchor.constraint(equalTo: topAnchor),
+            title.leadingAnchor.constraint(equalTo: leadingAnchor),
+            title.trailingAnchor.constraint(equalTo: trailingAnchor),
+            imageView.topAnchor.constraint(equalTo: title.bottomAnchor),
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             imageView.widthAnchor.constraint(equalTo: widthAnchor),
-            imageView.heightAnchor.constraint(equalTo: heightAnchor)
+            imageView.heightAnchor.constraint(equalTo: heightAnchor),
+
+            //TODO: add all constraints for views; no time now
         ])
         
     }
